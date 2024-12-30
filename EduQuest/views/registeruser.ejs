@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+</head>
+<body>
+    <div class="main">
+      <%- include('partials/nav')%>
+ 
+          <div class="signup">
+            <h1>Sign Up</h1>
+            <form action="/user/register" method="post">
+           <input name ="username" type="text" placeholder="Enter Username" >
+           <input name ="email" type="email" placeholder="Enter email" >
+           <input name ="password" type="password" placeholder="Enter password" >
+           <button>Sign Up</button>
+            </form>
+            <p>Already A User? <a href="/user/login">Login</a></p>
+          </div>
+
+        </div>
+    <%- include('partials/footer')%>
+      
+
+</body>
+</html>
